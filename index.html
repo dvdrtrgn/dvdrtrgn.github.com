@@ -71,12 +71,30 @@
     </style>
 </head>
 <body>
-    <a href="http://github.com/dvdrtrgn"><img id="ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" name="ribbon"></a>
+    <p>
+        <a href="http://github.com/dvdrtrgn"><img id="ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" name="ribbon"></a>
+    </p>
     <div class="description">
-        <h1>My junky page</h1>
-        <p>I'll get the hang of it.</p>
-        <h4>thanks!</h4>
-        <br>-- <a href="http://github.com/dvdrtrgn">dvdrtrgn</a>
+        <h1>
+            My junky page
+        </h1>-- <a href="http://github.com/dvdrtrgn">dvdrtrgn</a>
+    </div>
+    <script type="text/javascript">
+    function writeArea(nom) {
+        document.write('<textarea name="' + nom + '" rows="8" cols="40">' + new Date() + '<\/textarea>');
+    }
+    function enCode() {
+        var Form1 = document.forms[0];
+        for (var i = 0, thing; thing = Form1[i]; i++) console.log(thing);
+    }
+    </script>
+    <div id="name">
+        post2port <code>$ nc -lk 1234</code>
+        <form method="post" onsubmit="enCode()" action="http://localhost:1234">
+            <script type="text/javascript">
+writeArea('textArea')
+            </script> <input type="submit">
+        </form>
     </div>
 </body>
 </html>
