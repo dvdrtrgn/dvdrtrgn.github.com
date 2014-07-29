@@ -2,99 +2,22 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>
-        dvdrtrgn @ GitHub
-    </title>
-    <style type="text/css">
-    body {
-        margin-top: 1.0em;
-        background-color: #900;
-        font-family: sans-serif;
-        color: #fff;
-    }
-    h1 {
-        font-size: 3.8em;
-        color: #333;
-        margin-bottom: 3px;
-    }
-    h1 .small {
-        font-size: 0.4em;
-    }
-    h1 a {
-        text-decoration: none
-    }
-    h2 {
-        font-size: 1.5em;
-        color: #333;
-    }
-    h3 {
-        text-align: center;
-        color: #333;
-    }
-    a {
-        color: #9c0;
-    }
-    pre {
-        background: #000;
-        color: #fff;
-        padding: 15px;
-    }
-    hr {
-        border: 0;
-        width: 80%;
-        border-bottom: 1px solid #aaa
-    }
-    .description {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        font-style: italic;
-    }
-    .download {
-        float: right;
-    }
-    .footer {
-        text-align: center;
-        padding-top: 30px;
-        font-style: italic;
-    }
-    #container {
-        margin: 0 auto;
-        width: 700px;
-    }
-    #ribbon {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 0;
-    }
-    </style>
+    <title>dvdrtrgn @ GitHub</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <p>
-        <a href="http://github.com/dvdrtrgn"><img id="ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" name="ribbon"></a>
-    </p>
+    <p><a href="http://github.com/dvdrtrgn"><img id="ribbon"
+        src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+        alt="Fork me on GitHub" name="ribbon"></a></p>
     <div class="description">
-        <h1>
-            My junky page
-        </h1>-- <a href="http://github.com/dvdrtrgn">dvdrtrgn</a>
+        <h1> My junky page </h1>
+        <h2><a href="#" onclick="alert('$ nc -lk 1234')"><code>click4code2post2port</code></a></h2>
     </div>
-    <script type="text/javascript">
-    function writeArea(nom) {
-        document.write('<textarea name="' + nom + '" rows="8" cols="40">' + new Date() + '<\/textarea>');
-    }
-    function enCode() {
-        var Form1 = document.forms[0];
-        for (var i = 0, thing; thing = Form1[i]; i++) console.log(thing);
-    }
-    </script>
-    <div id="name">
-        post2port <code>$ nc -lk 1234</code>
-        <form method="post" onsubmit="enCode()" action="http://localhost:1234">
-            <script type="text/javascript">
-writeArea('textArea')
-            </script> <input type="submit">
-        </form>
-    </div>
+    <form method="post" onsubmit="enCode()" action="http://localhost:1234">
+        <textarea name="textArea" rows="8" cols="40"></textarea>
+        <input type="submit">
+    </form>
+    <script>writeArea();</script>
 </body>
 </html>
